@@ -1,0 +1,351 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+	background: linear-gradient(145deg, #273c75, #192a56);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #f5f5f5;
+	font-family: "Tilt Neon", sans-serif;
+	display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+#grid_contain { /*grid de la page index*/
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.2fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 40px;
+    grid-template-areas:
+        "etiq_nav etiq_nav etiq_nav etiq_nav"
+        "etiq_infor etiq_header etiq_header etiq_header"
+        "etiq_infor etiq_spe etiq_spe etiq_diplo"
+        "etiq_infor etiq_spe etiq_spe ."
+        "etiq_infor etiq_exp etiq_comp etiq_comp";
+}
+nav {
+	grid-area: etiq_nav;
+	border-radius: 50px;
+	padding: 5px;
+	text-align: center;
+}
+nav .lien {
+	text-align: left;
+}
+nav h3 {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav h3 {
+	display: inline-block;
+	margin-right: 10px;
+}
+nav h3 a {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+}
+nav h3 a:hover {
+	background: rgba(130, 255, 130, 0.25);
+	border: 1px solid rgba(200, 255, 200, 0.4);
+	box-shadow: 0 0px 20px rgba(100, 255, 100, 1);
+	border-radius: 20px;
+	transform: scale(1.1);
+	transition: transform 0.3s;
+}
+header { /*header de la page index*/
+	grid-area: etiq_header;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	justify-content: flex-start;
+	padding-left: 50px;
+	background: rgba(255, 255, 255, 0.25);
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 20px rgba(255, 255, 255, 1);
+	margin: 0px 2% 0px 2%;
+}
+.pipic { /*photo de profil*/
+	border-radius: 50%;
+	width: 10%;
+	max-width: 150px;
+}
+.para {
+	text-align: left;
+}
+#loca a { /*lien de la localisation*/
+	text-decoration: none;
+	color: #f5f5f5;
+	transition: transform 0.3s ease, color 0.3s ease;
+	border-bottom: 1px solid white;
+}
+#loca a:hover {
+	transform: scale(1.2);
+	color: rgba(200, 200, 200, 0.5);
+	border-bottom-color: rgba(200, 200, 200, 0.5);
+}
+.spe { /*parti spésialité de la page index*/
+	grid-area: etiq_spe;
+	background: rgba(255, 110, 255, 0.25);
+	border: 1px solid rgba(255, 200, 255, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 30px rgba(255, 0, 255, 2);
+	margin: 0px 0px 0px 4%;
+	height: auto;
+}
+#spe_contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 25px;
+	align-items: start;
+	grid-template-areas: "etiq_lyc etiq_but";
+}
+.Lycee, .BUT {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    padding: 15px;
+    min-height: 50px;
+    height: auto;
+}
+.Lycee a,
+.BUT a {
+	text-decoration: none;
+	color: #f5f5f5;
+	transition: color 0.3s ease;
+	border-bottom: 1px solid white;
+}
+.Lycee a:hover,
+.BUT a:hover {
+	color: rgba(255, 100, 255, 1);
+	border-bottom-color: rgba(255, 100, 255, 1);
+}
+.diplome { /*parti diplome de la page index*/
+	grid-area: etiq_diplo;
+	background: rgba(0, 200, 255, 0.25);
+	border: 1px solid rgba(255, 220, 255, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 30px rgba(0, 200, 255, 2);
+	margin: 0px 4% 0px 0px;
+	padding: 10px 25px 0px 25px;
+	text-indent: 10px;
+}
+.diplome a {
+	text-decoration: none;
+	color: #f5f5f5;
+	transition: color 0.3s ease;
+	border-bottom: 1px solid white;
+}
+.diplome a:hover {
+	color: rgba(0, 255, 255, 1);
+	border-bottom-color: rgba(0, 255, 255, 1);
+}
+.expro { /*parti expérience pro de la page index*/
+	grid-area: etiq_exp;
+	background: rgba(255, 0, 0, 0.25);
+	border: 1px solid rgba(255, 200, 200, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 30px rgba(255, 0, 0, 2);
+	margin: 0px 0px 0px 5%;
+	padding: 10px 25px 0px 25px;
+}
+.expro a {
+	text-decoration: none;
+	color: #f5f5f5;
+	transition: color 0.3s ease;
+	border-bottom: 1px solid white;
+}
+.expro a:hover {
+	color: rgba(240, 0, 0, 1);
+	border-bottom-color: rgba(240, 0, 0, 1);
+}
+.comp { /*parti compétence de la page index*/
+	grid-area: etiq_comp;
+	background: rgba(245, 230, 40, 0.25);
+	border: 1px solid rgba(245, 220, 200, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 30px rgba(245, 241, 39, 2);
+	margin: 0px 4% 0px 0px;
+	padding: 10px 10px 10px 20px;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.comprt, .compautre, .comphu {
+    background: rgba(0, 0, 0, 0.35);
+    flex: 1 1 100px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    text-indent: 10px;
+}
+.infor { /*parti information divers de la page index*/
+	grid-area: etiq_infor;
+	background: rgba(255, 112, 0, 0.25);
+	border: 1px solid rgba(255, 200, 200, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 30px rgba(255, 112, 0, 2);
+	margin: 0px 5% 0px 5%;
+	padding: 10px 25px 0px 25px;
+	text-indent: 10px;
+}
+
+/*page formation*/
+#grid_contain2 { /*grid de la page formation*/
+	width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 50px minmax(300px, auto) minmax(300px, auto);
+	grid-gap: 60px;
+	grid-template-areas:
+		"etiq_nav"
+		"etiq_spef"
+		"etiq_BUT";
+}
+.lyc { /*parti lycée de la page formation*/
+	grid-area: etiq_spef;
+	background: rgba(255, 110, 255, 0.25);
+	border: 1px solid rgba(255, 200, 255, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 30px rgba(255, 0, 255, 2);
+	margin: 0px 2% 0px 2%;
+}
+#lyc_grid {
+	display: grid;
+	grid-template-columns: 47% 48%;
+	grid-template-rows: 20px auto;
+	grid-gap: 35px;
+	padding: 10px 25px 15px 25px;
+	grid-template-areas:
+		". ."
+		"etiq_spee etiq_proj";
+}
+.lyc .spef {
+	grid-area: etiq_spee;
+	background: rgba(0, 0, 0, 0.35);
+	width: 100%;
+	border-radius: 15px;
+	height: 100%;
+	padding: 0px 10px 0px 10px;
+	text-indent: 10px;
+}
+.lyc .projetf {
+	grid-area: etiq_proj;
+	background: rgba(0, 0, 0, 0.35);
+	width: 100%;
+	border-radius: 15px;
+	height: 100%;
+	padding: 0px 10px 0px 10px;
+	text-indent: 10px;
+}
+.BUTf { /*parti BUT de la page formation*/
+	grid-area: etiq_BUT;
+	background: rgba(255, 110, 255, 0.25);
+	border: 1px solid rgba(255, 200, 255, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 30px rgba(255, 0, 255, 2);
+	margin: 0px 2% 0px 2%;
+}
+#BUTf_grid {
+	display: grid;
+	grid-template-columns: 47% 48%;
+	grid-template-rows: 20px auto;
+	grid-gap: 35px;
+	padding: 10px 25px 15px 25px;
+	grid-template-areas:
+		". ."
+		"etiq_speBf etiq_projetBf";
+}
+.BUTf .speBf {
+	grid-area: etiq_speBf;
+	background: rgba(0, 0, 0, 0.35);
+	width: 100%;
+	border-radius: 15px;
+	height: 100%;
+	padding: 0px 10px 0px 10px;
+	text-indent: 10px;
+}
+.BUTf .projetBf {
+	grid-area: etiq_projetBf;
+	background: rgba(0, 0, 0, 0.35);
+	width: 100%;
+	border-radius: 15px;
+	height: 100%;
+	padding: 0px 10px 0px 10px;
+	text-indent: 10px;
+}
+
+/*page Diplôme*/
+#grid_contain3 {/*grid de la page diplome*/
+	width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 60px;
+    grid-template-areas:
+        "etiq_nav"
+        "etiq_bacd";
+}
+#Bac {
+    grid-area: etiq_bacd;
+    background: rgba(0, 200, 255, 0.25);
+    border: 1px solid rgba(255, 220, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0px 30px rgba(0, 200, 255, 2);
+    margin: 0px 4% 0px 0px;
+    padding: 20px 25px;
+    text-indent: 10px;
+}
+#Bac img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.lien_LYC_site {
+	text-decoration: none;
+	color: #f5f5f5;
+	transition: color 0.3s ease;
+	border-bottom: 1px solid white;
+}
+.lien_LYC_site:hover {
+	color: rgba(0, 255, 255, 1);
+	border-bottom-color: rgba(0, 255, 255, 1);
+}
+
+
+/*footer de tous les pages*/
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.35);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    text-align: center;
+    color: #fff;
+}
+.footer-links {
+    margin-bottom: 10px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s ease;
+}
+footer a:hover {
+    border-bottom-color: #ff66ff;
+    color: #ff66ff;
+}

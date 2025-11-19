@@ -325,6 +325,30 @@ header { /*header de la page index*/
 	border-bottom-color: rgba(0, 255, 255, 1);
 }
 
+/*page experience pro*/
+#experipro {
+	background: rgba(255, 0, 0, 0.25);
+	border: 1px solid rgba(255, 200, 200, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 30px rgba(255, 0, 0, 2);
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	margin: 0 2%;
+    padding: 20px;
+}
+#entreprise,
+#exeperience {
+    background: rgba(0, 0, 0, 0.35);
+    flex: 1 1 auto;
+    border-radius: 15px;
+    min-height: 100px;
+    padding: 10px 15px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    text-indent: 10px;
+}
 
 /*footer de tous les pages*/
 footer {

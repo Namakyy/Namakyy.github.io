@@ -334,7 +334,7 @@ header { /*header de la page index*/
 	display: flex;
 	gap: 20px;
 	flex-direction: column;
-	margin: 2% 2% 0 2%;
+	margin: 1% 2% 0 2%;
     padding: 20px;
 }
 #entreprise,

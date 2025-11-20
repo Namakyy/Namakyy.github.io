@@ -201,7 +201,7 @@ header {
 .resume{
 	grid-area: etiq_resume;
 	background: rgb(247, 0, 255, 0.25);
-	border: 1px solid rgba(255, 0, 234, 0.6);
+	border: 1px solid rgba(255, 167, 248, 0.6);
 	border-radius: 15px;
 	box-shadow: 0 0px 30px rgba(255, 0, 200, 2);
 	margin: 0px 5% 0px 5%;

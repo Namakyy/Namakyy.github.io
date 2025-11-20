@@ -28,7 +28,7 @@ main {
         "etiq_infor etiq_header etiq_header etiq_header"
         "etiq_infor etiq_spe etiq_spe etiq_diplo"
         "etiq_infor etiq_spe etiq_spe ."
-        "etiq_infor etiq_exp etiq_comp etiq_comp";
+        "etiq_resume etiq_exp etiq_comp etiq_comp";
 }
 nav {
 	grid-area: etiq_nav;
@@ -195,6 +195,14 @@ header {
 	margin: 0px 5% 0px 5%;
 	padding: 10px 25px 0px 25px;
 	text-indent: 10px;
+}
+.resume{
+	grid-area: etiq_resume;
+	background: rgba(255, 112, 0, 0.25);
+	border: 1px solid rgba(255, 200, 200, 0.6);
+	border-radius: 15px;
+	box-shadow: 0 0px 30px rgba(255, 112, 0, 2);
+	margin: 0px 5% 0px 5%;
 }
 
 /*page formation*/

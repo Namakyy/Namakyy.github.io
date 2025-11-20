@@ -315,13 +315,13 @@ header {
     height: auto;
     border-radius: 10px;
 }
-.lien_LYC_site {
+#Bac a {
 	text-decoration: none;
 	color: #f5f5f5;
 	transition: color 0.3s ease;
 	border-bottom: 1px solid white;
 }
-.lien_LYC_site:hover {
+#Bac a:hover {
 	color: rgba(0, 255, 255, 1);
 	border-bottom-color: rgba(0, 255, 255, 1);
 }

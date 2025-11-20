@@ -211,7 +211,7 @@ header { /*header de la page index*/
 		"etiq_spef"
 		"etiq_BUT";
 }
-.lyc { /*parti lycée de la page formation*/
+.lyc {/*parti formation lycee*/
 	grid-area: etiq_spef;
 	background: rgba(255, 110, 255, 0.25);
 	border: 1px solid rgba(255, 200, 255, 0.6);
@@ -219,35 +219,31 @@ header { /*header de la page index*/
 	box-shadow: 0 0px 30px rgba(255, 0, 255, 2);
 	margin: 0px 2% 0px 2%;
 }
-#lyc_grid {
-	display: grid;
-	grid-template-columns: 47% 48%;
-	grid-template-rows: 20px auto;
-	grid-gap: 35px;
-	padding: 10px 25px 15px 25px;
-	grid-template-areas:
-		". ."
-		"etiq_spee etiq_proj";
+.lyc h3{
+	margin-left: 15px;
+}
+.lyc_flex{
+	padding: 10px 10px 10px 10px;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .lyc .spef {
-	grid-area: etiq_spee;
 	background: rgba(0, 0, 0, 0.35);
-	width: 100%;
-	border-radius: 15px;
-	height: 100%;
-	padding: 0px 10px 0px 10px;
-	text-indent: 10px;
+    flex: 1 1 100px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    text-indent: 10px;
 }
 .lyc .projetf {
-	grid-area: etiq_proj;
 	background: rgba(0, 0, 0, 0.35);
-	width: 100%;
-	border-radius: 15px;
-	height: 100%;
-	padding: 0px 10px 0px 10px;
-	text-indent: 10px;
+    flex: 1 1 100px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    text-indent: 10px;
 }
-.BUTf { /*parti BUT de la page formation*/
+.BUTf {/*parti formation but*/
 	grid-area: etiq_BUT;
 	background: rgba(255, 110, 255, 0.25);
 	border: 1px solid rgba(255, 200, 255, 0.6);
@@ -255,34 +251,25 @@ header { /*header de la page index*/
 	box-shadow: 0 0px 30px rgba(255, 0, 255, 2);
 	margin: 0px 2% 0px 2%;
 }
-#BUTf_grid {
-	display: grid;
-	grid-template-columns: 47% 48%;
-	grid-template-rows: 20px auto;
-	grid-gap: 35px;
-	padding: 10px 25px 15px 25px;
-	grid-template-areas:
-		". ."
-		"etiq_speBf etiq_projetBf";
+.BUTf h3{
+	margin-left: 15px;
 }
-.BUTf .speBf {
-	grid-area: etiq_speBf;
+.BUTf_flex{
+	padding: 10px 10px 10px 10px;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.speBf, 
+.projetBf {
 	background: rgba(0, 0, 0, 0.35);
-	width: 100%;
-	border-radius: 15px;
-	height: 100%;
-	padding: 0px 10px 0px 10px;
-	text-indent: 10px;
+    flex: 1 1 100px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    text-indent: 10px;
 }
-.BUTf .projetBf {
-	grid-area: etiq_projetBf;
-	background: rgba(0, 0, 0, 0.35);
-	width: 100%;
-	border-radius: 15px;
-	height: 100%;
-	padding: 0px 10px 0px 10px;
-	text-indent: 10px;
-}
+
 
 /*page Diplôme*/
 #grid_contain3 {/*grid de la page diplome*/

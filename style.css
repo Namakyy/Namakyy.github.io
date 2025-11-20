@@ -94,29 +94,26 @@ header { /*header de la page index*/
 	color: rgba(200, 200, 200, 0.5);
 	border-bottom-color: rgba(200, 200, 200, 0.5);
 }
-.spe { /*parti spésialité de la page index*/
+.spe { /*Parti formation de la page index*/
 	grid-area: etiq_spe;
 	background: rgba(255, 110, 255, 0.25);
 	border: 1px solid rgba(255, 200, 255, 0.6);
 	border-radius: 15px;
 	box-shadow: 0 0px 30px rgba(255, 0, 255, 2);
 	margin: 0px 0px 0px 4%;
-	height: auto;
+	padding: 10px 10px 10px 10px;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-#spe_contain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
-    padding: 25px;
-	align-items: start;
-	grid-template-areas: "etiq_lyc etiq_but";
-}
-.Lycee, .BUT {
+.Lycee, 
+.BUT {
     background: rgba(0, 0, 0, 0.35);
+    flex: 1 1 100px;
     border-radius: 15px;
-    padding: 15px;
-    min-height: 50px;
-    height: auto;
+    padding: 0px 10px;
+    text-indent: 10px;
 }
 .Lycee a,
 .BUT a {

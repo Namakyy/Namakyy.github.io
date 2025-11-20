@@ -243,6 +243,11 @@ header {
     padding: 0px 10px;
     text-indent: 10px;
 }
+.lyc h4{
+	display: inline-block;
+    border-bottom: 1px solid #fff;
+}
+
 .BUTf {/*parti formation but*/
 	grid-area: etiq_BUT;
 	background: rgba(255, 110, 255, 0.25);
@@ -268,6 +273,10 @@ header {
     border-radius: 15px;
     padding: 0px 10px;
     text-indent: 10px;
+}
+.BUTf h4{
+	display: inline-block;
+    border-bottom: 1px solid #fff;
 }
 
 

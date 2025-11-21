@@ -205,6 +205,8 @@ header {
 	border-radius: 15px;
 	box-shadow: 0 0px 30px rgba(255, 0, 200, 2);
 	margin: 0px 5% 0px 5%;
+	padding: 10px 25px 0px 25px;
+	text-indent: 10px;
 }
 
 /*page formation*/

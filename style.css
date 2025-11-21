@@ -200,10 +200,10 @@ header {
 }
 .resume{
 	grid-area: etiq_resume;
-	background: rgb(247, 0, 255, 0.25);
-	border: 1px solid rgba(255, 167, 248, 0.6);
+	background: rgb(247, 0, 155, 0.25);
+	border: 1px solid rgba(255, 167, 148, 0.6);
 	border-radius: 15px;
-	box-shadow: 0 0px 30px rgba(255, 0, 200, 2);
+	box-shadow: 0 0px 30px rgba(255, 0, 100, 2);
 	margin: 0px 5% 0px 5%;
 	padding: 10px 25px 0px 25px;
 	text-indent: 10px;

@@ -27,10 +27,10 @@ main {
     grid-gap: 40px;
     grid-template-areas:
         "etiq_nav etiq_nav etiq_nav etiq_nav"
-        "etiq_infor etiq_header etiq_header etiq_header"
+        "etiq_resume etiq_header etiq_header etiq_header"
         "etiq_infor etiq_spe etiq_spe etiq_diplo"
         "etiq_infor etiq_spe etiq_spe ."
-        "etiq_resume etiq_exp etiq_comp etiq_comp";
+        "etiq_infor etiq_exp etiq_comp etiq_comp";
 }
 nav {
 	grid-area: etiq_nav;
